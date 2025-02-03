@@ -1,5 +1,4 @@
 import { createContext, useContext } from "react";
-import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const StyledTable = styled.div`
@@ -63,8 +62,6 @@ const Empty = styled.p`
 const TableContext = createContext();
 
 function Table({ columns, children }) {
-  console.log(TableContext);
-
   return (
     <TableContext.Provider value={{ columns }}>
       <StyledTable role="table">{children}</StyledTable>
