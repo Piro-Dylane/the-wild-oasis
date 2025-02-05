@@ -6,7 +6,6 @@ const StyledTable = styled.div`
 
   font-size: 1.4rem;
   background-color: var(--color-grey-0);
-  border-radius: 7px;
 `;
 
 const CommonRow = styled.div`
@@ -37,7 +36,7 @@ const StyledRow = styled(CommonRow)`
 `;
 
 const StyledBody = styled.section`
-  margin: 0.4rem 0;
+  margin: 0.5rem;
 `;
 
 const Footer = styled.footer`
