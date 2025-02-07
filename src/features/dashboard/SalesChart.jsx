@@ -11,13 +11,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import {
-  eachDayOfInterval,
-  format,
-  isDate,
-  isSameDay,
-  subDays,
-} from "date-fns";
+import { eachDayOfInterval, format, isSameDay, subDays } from "date-fns";
 const StyledSalesChart = styled(DashboardBox)`
   grid-column: 1 / -1;
 
