@@ -7,6 +7,7 @@ import Tag from "../../ui/Tag";
 import ButtonGroup from "../../ui/ButtonGroup";
 import Button from "../../ui/Button";
 import Spinner from "../../ui/Spinner";
+import Empty from "../../ui/Empty";
 
 import { useMoveBack } from "../../hooks/useMoveBack";
 import { useBooking } from "./useBooking";
@@ -38,6 +39,7 @@ function BookingDetail() {
   };
 
   if (isPending) return <Spinner />;
+  if (!booking.length) return <Empty resource="booking" />;
 
   return (
     <>
